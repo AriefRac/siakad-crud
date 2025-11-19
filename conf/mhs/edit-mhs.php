@@ -1,5 +1,5 @@
 <?php
-include("config.php");
+include("../config.php");
 
 if(isset($_POST["update"])){
     $nim = $_POST['nim'];
@@ -11,7 +11,7 @@ if(isset($_POST["update"])){
     $no_hp = $_POST['no_hp'];
     $status = $_POST['status'];
 
-    $sql = "UPDATE  tb_mahasiswa SET nama_mahasiswa='$nama_mahasiswa', jenis_kelamin='$jenis_kelamin', kode_prodi='$kode_prodi', alamat='$alamat', email='$email', no_hp='$no_hp', status='$status'";
+    $sql = "UPDATE tb_mahasiswa SET nama_mahasiswa='$nama_mahasiswa', jenis_kelamin='$jenis_kelamin', kode_prodi='$kode_prodi', alamat='$alamat', email='$email', no_hp='$no_hp', status='$status' WHERE nim =$nim";
     $query = mysqli_query($conn, $sql);
 
     if($query){

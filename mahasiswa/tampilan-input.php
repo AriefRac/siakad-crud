@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIAKAD UIN SMH BANTEN</title>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <center><h1>UIN SULTAN MAULANA HASANUDIN BANTEN</h1></center>
+    <h1>UIN SULTAN MAULANA HASANUDIN BANTEN</h1>
     <h2>Pendaftaran Mahasiswa Baru</h2>
 
-    <form action="../conf/input-mhs.php" method="POST">
+    <a href="data-mahasiswa.php">Kembali</a>
+    
+    <form action="../conf/mhs/input-mhs.php" method="POST">
         <table>
             <tr>
                 <td>NIM</td>

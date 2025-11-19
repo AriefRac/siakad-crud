@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIAKAD UIN SMH BANTEN</title>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <center><h1>UIN SULTAN MAULANA HASANUDIN BANTEN</h1></center>
+    <h1>UIN SULTAN MAULANA HASANUDIN BANTEN</h1>
     <h2>INPUT MATA KULIAH</h2>
-
-    <form action="../conf/input-mk.php" method="POST">
+    <a href="data-matakuliah.php">Kembali</a>
+    
+    <form action="../conf/mk/input-mk.php" method="POST">
         <table>
             <tr>
                 <td>Kode Mata Kuliah</td>   

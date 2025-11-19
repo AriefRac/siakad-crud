@@ -1,5 +1,5 @@
 <?php
-include("config.php");
+include("../config.php");
 if(isset($_POST["daftar"])){
 
     $kode_matakuliah = $_POST["kode_matakuliah"];

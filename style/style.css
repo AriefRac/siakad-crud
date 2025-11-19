@@ -1,0 +1,298 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+/* Header Styles */
+h1 {
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border-left: 5px solid #ffd700;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styles */
+nav > ul{
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* margin: 15px 0; */
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #667eea;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+    border: 2px solid #667eea;
+}
+
+nav a:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+}
+
+/* Back Link Styles */
+body > a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    margin: 10px 0;
+}
+
+body > a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateX(-5px);
+}
+
+/* Table Container */
+table {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Table Header */
+thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+thead th {
+    padding: 18px 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border: none;
+}
+
+/* Table Body */
+tbody tr {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #e9ecef;
+}
+
+tbody tr:hover {
+    background: #f8f9fa;
+    transform: scale(1.01);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody td {
+    padding: 15px;
+    color: #495057;
+    border: none;
+}
+
+/* Action Buttons */
+.btn-update, .btn-delete {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+    margin: 0 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-update {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    color: white;
+    box-shadow: 0 4px 6px rgba(17, 153, 142, 0.3);
+}
+
+.btn-update:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(17, 153, 142, 0.4);
+}
+
+.btn-delete {
+    background: linear-gradient(135deg, #ee0979 0%, #ff6a00 100%);
+    color: white;
+    box-shadow: 0 4px 6px rgba(238, 9, 121, 0.3);
+}
+
+.btn-delete:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(238, 9, 121, 0.4);
+}
+
+/* Form Styles (for input pages) */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+label {
+    display: block;
+    color: #495057;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input[type="submit"],
+button[type="submit"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+        padding: 20px 10px;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+    }
+    
+    table {
+        font-size: 0.9em;
+    }
+    
+    thead th,
+    tbody td {
+        padding: 10px 8px;
+    }
+    
+    .btn-update, .btn-delete {
+        padding: 6px 12px;
+        font-size: 0.8em;
+        margin: 2px;
+    }
+    
+    nav {
+        flex-direction: column;
+    }
+    
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Loading Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+table {
+    animation: fadeIn 0.5s ease;
+}
+
+/* Center tag replacement */
+center {
+    display: block;
+    text-align: center;
+}

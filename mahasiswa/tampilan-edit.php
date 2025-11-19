@@ -18,16 +18,21 @@ if (mysqli_num_rows($query) < 1) {
 
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIAKAD UIN SMH BANTEN</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <center><h1>UIN SULTAN MAULANA HASANUDIN BANTEN</h1></center>
+    <h1>UIN SULTAN MAULANA HASANUDIN BANTEN</h1>
     <h2>Edit Data Mahasiswa</h2>
 
-    <form action="../conf/edit-mhs.php" method="POST">
+    <a href="data-mahasiswa.php">Kembali</a>
+
+    <form action="../conf/mhs/edit-mhs.php" method="POST">
         <input type="hidden" name="nim" value="<?php echo $mahasiswa['nim']?>">
         <table>
             <tr>
@@ -39,8 +44,9 @@ if (mysqli_num_rows($query) < 1) {
                 <td>Jenis Kelamin</td>
                 <td>:</td>
                 <td>
+                    
                     <select name="jenis_kelamin">
-                        <option value=""><?php echo $mahasiswa['jenis_kelamin']?></option>
+                        <option value="<?php echo $mahasiswa['jenis_kelamin']?>"><?php echo $mahasiswa['jenis_kelamin']?></option>
                         <option value="Laki-laki">Laki-laki</option>
                         <option value="Perempuan">Perempuan</option>
                     </select>
@@ -51,7 +57,7 @@ if (mysqli_num_rows($query) < 1) {
                 <td>:</td>
                 <td>
                     <select name="kode_prodi">
-                        <option value=""><?php echo $mahasiswa['kode_prodi']?></option>
+                        <option value="<?php echo $mahasiswa['kode_prodi']?>"><?php echo $mahasiswa['kode_prodi']?></option>
                         <option value="FIS">FIS</option>
                         <option value="KIM">KIM</option>
                         <option value="BIO">BIO</option>
@@ -80,7 +86,7 @@ if (mysqli_num_rows($query) < 1) {
                 <td>:</td>
                 <td>
                     <select name="status">
-                        <option value=""><?php echo $mahasiswa['status']?></option>
+                        <option value="<?php echo $mahasiswa['status']?>"><?php echo $mahasiswa['status']?></option>
                         <option value="Aktif">Aktif</option>
                         <option value="Cuti">Cuti</option>
                         <option value="Drop Out">Drop Out</option>

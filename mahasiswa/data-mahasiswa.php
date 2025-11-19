@@ -6,15 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIAKAD UIN BANTEN</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <center><h1>UIN SULTAN MAULANA HASANUDDIN BANTEN</h1></center>
+    <nav>
+        <ul>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="data-mahasiswa.php">Mahasiswa</a></li>
+            <li><a href="../matakuliah/data-matakuliah.php">Matakuliah</a></li>
+        </ul>
+    </nav>
+    <h1>UIN SULTAN MAULANA HASANUDDIN BANTEN</h1>
     <br>
     <h2>DATA MAHASISWA</h2>
-    <nav>
-        <a href="tampilan-input.php"> [+] Tambah Baru</a>
-    </nav>
+    <a href="../index.php">Kembali</a>
+    <a href="tampilan-input.php"> [+] Tambah Baru</a>
 <br>
     <table border="1">
         <thead>

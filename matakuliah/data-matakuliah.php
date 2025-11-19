@@ -6,17 +6,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIAKAD UIN BANTEN</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
+
 <body>
-    <center><h1>UIN SULTAN MAULANA HASANUDDIN BANTEN</h1></center>
-    <br>
-    <h2>DATA MAHASISWA</h2>
     <nav>
-        <a href="input-matakuliah.php"> [+] Tambah Baru</a>
+        <ul>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="data-mahasiswa.php">Mahasiswa</a></li>
+            <li><a href="../matakuliah/data-matakuliah.php">Matakuliah</a></li>
+        </ul>
     </nav>
-<br>
-    <table border="1">
+
+    <h1>UIN SULTAN MAULANA HASANUDDIN BANTEN</h1>
+    <h2>DATA MAHASISWA</h2>
+    
+    <a href="../index.php">Kembali</a>
+    <a href="input-matakuliah.php"> [+] Tambah Baru</a>
+    
+    <table>
         <thead>
             <tr>
                 <th>Kode Mata Kuliah</th>
@@ -37,8 +45,8 @@
                     echo "<td>".$data_mk['jumlah_sks']."</td>";
                     
                     echo "<td>";
-                    echo "<a href='tampilan-edit.php?nim=".$data_mk['kode_matakuliah']."'><input type='button' class='btn-update' value='edit'></a>";
-                    echo "<a href='delete.php?nim=".$data_mk['kode_matakuliah']."'><input type='button' class='btn-delete' value='delete'></a>";
+                    echo "<a href='edit-matakuliah.php?kode_mk=".$data_mk['kode_matakuliah']."'><input type='button' class='btn-update' value='edit'></a>";
+                    echo "<a href='delete-matakuliah.php?kode_mk=".$data_mk['kode_matakuliah']."'><input type='button' class='btn-delete' value='delete'></a>";
                     echo "</td>";
 
                     echo "</tr>";
