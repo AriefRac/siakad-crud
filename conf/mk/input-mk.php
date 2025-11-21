@@ -10,7 +10,7 @@ if(isset($_POST["daftar"])){
     $query = mysqli_query($conn, $sql);
 
     if($query){
-        header('location: ../matakuliah/data-matakuliah.php?status=sukses');
+        header('location: ../../matakuliah/data-matakuliah.php?status=sukses');
     }else{
         header('location: index.php?status=gagal');
     }

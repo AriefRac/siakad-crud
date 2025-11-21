@@ -15,7 +15,7 @@ if(isset($_POST["update"])){
     $query = mysqli_query($conn, $sql);
 
     if($query){
-        header('location: ../mahasiswa/data-mahasiswa.php?status=sukses');
+        header('location: ../../mahasiswa/data-mahasiswa.php?status=sukses');
     }else{
         die('Gagal mengedit');
     }
