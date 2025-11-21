@@ -9,7 +9,7 @@ if(isset($_POST["update"])){
     $query = mysqli_query($conn, $sql);
 
     if($query){
-        header('location: ../matakuliah/data-matakuliah.php?status=sukses');
+        header('location: ../../matakuliah/data-matakuliah.php?status=sukses');
     }else{
         die('Gagal mengedit');
     }
